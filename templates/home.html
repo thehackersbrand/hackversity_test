@@ -5,16 +5,29 @@
 {% block content %}
 <div class="main-content">
     <section class="hero">
-        <h1>Unlock Your Digital Fortress</h1>
-        <p>Advanced cybersecurity solutions that adapt and evolve with emerging threats. Your digital assets deserve military-grade protection.</p>
-    </section>
-
-    <section class="price-banner">
-        <h2><span class="emoji">🎉</span> SURPRISE! PRICE DROP JUST FOR YOU! <span class="emoji">🎉</span></h2>
-        <div class="cta-container">
-            <a href="{% url 'core:pricing' %}" class="cta-primary">BUG-BOUNTY WORKSHOP 999/- 299/-</a>
-            <a href="{% url 'core:features' %}" class="cta-secondary">WHAT WE OFFER</a>
+        <h1><span class="typed-text"></span><span class="cursor">&nbsp;</span></h1>
+        
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" placeholder="Ask anything or @mention a Space" class="search-input">
+                <div class="search-actions">
+                    <button class="search-icon"><i class="fas fa-search"></i></button>
+                    <button class="action-button"><i class="fas fa-random"></i></button>
+                    <button class="action-button"><i class="fas fa-lightbulb"></i></button>
+                    <div class="right-actions">
+                        <button class="action-button"><i class="fas fa-globe"></i></button>
+                        <button class="action-button"><i class="fas fa-th"></i></button>
+                        <button class="action-button"><i class="fas fa-link"></i></button>
+                        <button class="action-button"><i class="fas fa-microphone"></i></button>
+                        <button class="action-button ai-button"><i class="fas fa-robot"></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    
+    
+
+   
 </div>
 {% endblock %}
