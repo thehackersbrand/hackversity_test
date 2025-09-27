@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Hackversity{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>  
+    <header>
+        <nav class="main-nav">
+            <div class="logo-container">
+                <img src="/static/images/logo.png" alt="Hackversity Logo" class="logo">
+                <div class="brand-text">
+                    <span class="brand-name">Hackversity</span>
+                    <span class="brand-subtitle">A University For Ethical Hackers</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="{% url 'core:home' %}" class="nav-link">Home</a></li>
+                <li><a href="{% url 'core:features' %}" class="nav-link">Features</a></li>
+                <li><a href="{% url 'core:pricing' %}" class="nav-link">Pricing</a></li>
+                <li><a href="{% url 'core:contact' %}" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hackversity - A University For Ethical Hackers</p>
+    </footer>
+</body>
+</html>
